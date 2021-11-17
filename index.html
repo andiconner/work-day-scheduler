@@ -26,65 +26,75 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="displayMoment" class="lead "></p>
+      <p id="displayMoment" class="lead "><span></span></p>
+      <p id="hourMoment"><span</p>
     </header>
-    <div class="container-fluid">
+
+    
+    <!--legenda-->
+    <div class="container w-100">
+      <div class="row h-25 justify-content-md-center">
+        <div class="col-sm col col-lg-2 text-center past">Past</div>
+        <div class="col-sm col col-lg-2 text-center present">Current</div>
+        <div class="col-sm col col-lg-2 text-center future">Upcoming</div>
+      </div>  
       <!-- Timeblocks go here -->
-      <div class="row">
-        <div class="hour col-12 col-md-1 ">9:00</div>
-        <textarea class="time-block col-12 col-sm-10" ></textarea>
-          <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour col-12 col-md-1 ">10:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-sm-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">11:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">12:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">13:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">14:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">15:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">16:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-
-      <div class="row">
-        <div class="hour time-block col-12 col-md-1 ">17:00</div>
-        <textarea class="time-block text-area description col-12 col-md-10 " ></textarea>
-        <button class="saveBtn col-12 col-md-1"><i class="fas fa-save"></i></button>
-      </div>
-        
+    <div class="container">
       
+      <div class="row justify-space-between">
+        <div class="col hour">09:00am</div>
+        <textarea id="9" class="time-block col-10" ></textarea>
+        <button data-id="9" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">10:00am</div>
+        <textarea id="10" class="time-block col-10" ></textarea>
+        <button data-id="10" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">11:00am</div>
+        <textarea id="11" class="time-block col-10" ></textarea>
+        <button data-id="11" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">12:00pm</div>
+        <textarea id="12" class="time-block col-10" ></textarea>
+        <button data-id="12" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-space-between">
+        <div class="col hour">01:00pm</div>
+        <textarea id="13" class="time-block col-10" ></textarea>
+        <button data-id="13" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">02:00pm</div>
+        <textarea id="14" class="time-block col-10" ></textarea>
+        <button data-id="14" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">03:00pm</div>
+        <textarea id="15" class="time-block col-10" ></textarea>
+        <button data-id="15" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">04:00pm</div>
+        <textarea id="16" class="time-block col-10" ></textarea>
+        <button data-id="16" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col hour">05:00pm</div>
+        <textarea id="17" class="time-block col-10" ></textarea>
+        <button data-id="17" class="saveBtn col"><i class="fas fa-save"></i></button>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
